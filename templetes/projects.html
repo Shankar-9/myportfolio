@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="project">
+    <h1 class="heading">My <span>Projects</span></h1>
+    <div class="project-list">
+        {% for projects in project%}
+        <div class="project-content">
+            <div class="project-icons">
+                <a href={{projects.gitlink}}><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxs-file'></i></a>
+                <a href=""><i class='bx bx-code-alt' ></i></a>
+            </div>
+            <div class="project-content1">
+                <h2>{{projects.title}}</h2>
+                <p>{{projects.description}}</p>
+            </div>
+            <div class="button">
+                <a href="">More</a>
+            </div>
+        </div>
+        {%endfor%}
+      
+    </div>
+    </section>
+{%endblock%}

@@ -1,0 +1,75 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shankar</title>
+
+        <!-- The link has to be change -->
+    <!-- ./loading_page/style.css -->
+    <!-- <link rel="stylesheet" href="{% static 'loading_page\style.css' %}"> -->
+    <!-- boxicons link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- =====navbar link ====== -->
+    <link rel="stylesheet" href="{%static 'assets123/css/style.css' %}">
+
+</head>
+
+<body>
+  
+  
+
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <!-- <img src="assets123/img/koala.svg" alt="Logo"> -->
+               <a href="/"> <span>Shankar</span></a>
+            </div>
+            <ul>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="journey.html">Journey</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% static 'assets123\img\Palagani Gowri Shankar_NIT Raipur.pdf'%}"> Resume</a></li>
+            </ul>
+
+            <div class="mobile-menu-icon">
+                <div class="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="intro_div">
+         
+        </div>
+    </header>
+  
+    {%block content%}
+
+    {%endblock%}
+
+
+<footer>
+    <div class="footer">
+        <p><i class='bx bx-copyright'></i> All rights are reserved | Designed by Shankar | 9542973947</p>
+    </div>
+</footer>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- This line have to change url  -->
+<!-- <script src="{% static 'loading_page\script.js'%}"></script> -->
+<!-- ========navbar script link =============== -->
+<script src="{%static 'assets123\js\menu.js' %}"></script>
+</html>
