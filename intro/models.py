@@ -7,6 +7,12 @@ class Journey(models.Model):
     from_date=models.DateField()
     to_date=models.DateField()
     extra=models.TextField()
+class Journey1(models.Model):
+    university=models.CharField(max_length = 1000)
+    description=models.TextField()
+    from_date=models.DateField()
+    to_date=models.DateField()
+    extra=models.TextField()
 class projects(models.Model):
     title=models.CharField(max_length=1000)
     description=models.TextField()

@@ -184,93 +184,17 @@
 <section class="project">
 <h1 class="heading">My <span>Projects</span></h1>
 <div class="project-list">
+    {% for project in project%}
     <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
         <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
+            <h2>{{project.title}}</h2>
+            <p>{{project.description}}</p>
         </div>
         <div class="button">
             <a href="projects.html">More</a>
         </div>
     </div>
-    <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
-        <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
-        <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
-
-
-    <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
-        <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
-
-    <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
-        <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-icons">
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxs-file'></i></a>
-            <a href=""><i class='bx bx-code-alt' ></i></a>
-        </div>
-        <div class="project-content1">
-            <h2>Project Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur nulla, iure eius illum odit omnis velit libero minima est quam impedit vitae tempore animi perferendis repudiandae expedita sequi quibusdam! Explicabo</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
+    {%endfor%}
 </div>
 </section>
 

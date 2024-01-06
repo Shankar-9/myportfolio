@@ -7,58 +7,37 @@
     <div class="education-row">
         <div class="education-column">
             <h3 class="title">Education</h3>
-
             <div class="education-box">
+                {% for journey in journey%}
                 <div class="education-content">
                     <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
+                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
+                        <h3>{{journey.Univerity}}</h3>
+                        <p>{{journey.description}}</p>
+                        <br>
+                        <p>{{journey.extra}}</p>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-
+                {%endfor%}
             </div>
         </div>
 
         <div class="education-column">
-            <h3 class="title">Education</h3>
+            <h3 class="title">Experiance</h3>
 
             <div class="education-box">
+                {% for journey in journey1%}
                 <div class="education-content">
                     <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
+                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
+                        <h3>{{journey.Univerity}}</h3>
+                        <p>{{journey.description}}</p>
+                        <br>
+                        <p>{{journey.extra}}</p>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
+                {%endfor%}
+             
 
             </div>
         </div>

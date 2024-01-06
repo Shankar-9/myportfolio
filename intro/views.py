@@ -2,9 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import send_mail
-from .models import projects
+from .models import *
 def home(request):
-    return render(request, 'home.html')
+    pro1=projects.objects.all()
+    jur1=Journey.objects.all()
+    return render(request, 'home.html', {'project':pro1, 'journey':jur1})
 def aboutme(request):
     return render(request, 'aboutme.html')
 def contact(request):
@@ -15,7 +17,9 @@ def projects1(request):
 def skills(request):
     return render(request, 'skills.html')
 def journey(request):
-    return render(request, 'journey.html')
+    jur2=Journey.objects.all()
+    expirience=Journey1.objects.all()
+    return render(request, 'journey.html', {"journey":jur2, 'journey1':expirience})
 
 def submit(request):
     if request.method == 'POST':
