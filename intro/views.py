@@ -8,7 +8,7 @@ def home(request):
     pro1=projects.objects.all()
     jur1=Journey.objects.all()
     expirience1=Journey1.objects.all()
-    return render(request, 'home.html', {'project':pro1, 'journey':jur1, 'skill_nam':ska1,  'journey1':expirience1})
+    return render(request, 'index.html', {'project':pro1, 'journey':jur1, 'skill_nam':ska1,  'journey1':expirience1})
 def aboutme(request):
     return render(request, 'aboutme.html')
 def contact(request):
