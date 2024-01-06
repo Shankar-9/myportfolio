@@ -902,6 +902,25 @@ section{
 }
 
 
+/* ======================= skills page in home ======================== */
+.programming{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.out_programming{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.programming_img{
+    width: 100px;
+    height: 100px;
+}
+
+
 
 
 

@@ -55,124 +55,84 @@
     <div class="education-row">
         <div class="education-column">
             <h3 class="title">Education</h3>
-
             <div class="education-box">
+                {% for journey in journey%}
                 <div class="education-content">
                     <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
+                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
+                        <h3>{{journey.Univerity}}</h3>
+                        <p>{{journey.description}}</p>
+                        <br>
+                        <p>{{journey.extra}}</p>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-
+                {%endfor%}
             </div>
         </div>
 
         <div class="education-column">
-            <h3 class="title">Education</h3>
+            <h3 class="title">Experiance</h3>
 
             <div class="education-box">
+                {% for journey in journey1%}
                 <div class="education-content">
                     <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
+                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
+                        <h3>{{journey.Univerity}}</h3>
+                        <p>{{journey.description}}</p>
+                        <br>
+                        <p>{{journey.extra}}</p>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
-                        <h3>Master-Degree -- Univerity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea rem rerum illo quo alias deleniti dolor debitis nam atque. Praesentium culpa consequuntur asperiores molestiae pariatur ullam aperiam distinctio maiores!</p>
-                    </div>
-                </div>
+                {%endfor%}
+             
 
             </div>
         </div>
     </div>
 
     <div class="button-box btns">
-        <a href="journey.html" class="btn">Read More</a>
+        <a href="" class="btn">Read More</a>
     </div>
-</section>
-<!-- ====================Skills section design ==================== -->
+</section><!-- ====================Skills section design ==================== -->
 <section class="skills" id="skills">
 <h1 class="heading">My <span>Skills</span></h1>
-
-
-<div class="skills-row">
-    <div class="skills-column">
-        <h3 class="title">Coding Skills</h3>
-
-        <div class="skills-box">
-            <div class="skills-content">
-                <div class="progress">
-                    <h3>HTML <span>98%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>58%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>90%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>68%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
+<div class="programming">
+    <h1>Programming</h1>
+    <div class="out_programming">
+      {% for skill in skill_nam %}
+       {% if skill.type == "P" %}
+        <div class="programming_content">
+            <div class="programming_img">
+                <img src='{{skill.image.url}}' alt="">
             </div>
-        </div>
-    </div>
-    <div class="skills-column">
-        <h3 class="title">Soft Skills</h3>
-
-        <div class="skills-box">
-            <div class="skills-content">
-                <div class="progress">
-                    <h3>HTML <span>98%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>58%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>90%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h3>HTML <span>68%</span></h3>
-                    <div class="bar"><span></span></div>
-                </div>
+            <div class="programmig_con">
+                {{skill.skill}}     
+                <br/>
+                {{skill.type}}  
             </div>
-        </div>
+         </div>
+      {%endif%}
+     {%endfor%}
     </div>
-  
 </div>
-
+<div class="programming">
+    <h1>Technologirs</h1>
+    <div class="out_programming">
+     {% for skill in skill_nam %}
+     {% if skill.type == "T" %}
+        <div class="programming_content">
+            <div class="programming_img">
+                <img src='{{skill.image.url}}' alt="">
+            </div>
+            <div class="programmig_con">
+                {{skill.skill}}       
+            </div>
+         </div>
+     {%endif%}
+     {%endfor%}
+    </div>
+</div>
 <center> <div class="button-box btns">
 <a href="skills.html" class="btn">Read More</a>
 </div></center>

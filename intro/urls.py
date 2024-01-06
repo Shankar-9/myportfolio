@@ -9,7 +9,7 @@ urlpatterns=[
     path('aboutme.html', views.aboutme, name='about'),
     path('contact.html', views.contact, name='contact'),
     path('projects.html',views.projects1, name='projects1'),
-    path('skills.html', views.skills, name='skills'),
+    path('skills.html', views.skills1, name='skills'),
     path('submit_form', views.submit, name='submit')
     
-]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

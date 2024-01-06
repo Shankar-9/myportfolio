@@ -902,6 +902,37 @@ section{
 }
 
 
+/* ======================= skills page in home ======================== */
+.programming{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+}
+.programming_content{
+    margin-top: 30px;
+}
+.out_programming{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.programming_img img{
+    width: 100px;
+    height: 100px;
+}
+.programmig_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 

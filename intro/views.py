@@ -4,9 +4,11 @@ from django.conf import settings
 from django.core.mail import send_mail
 from .models import *
 def home(request):
+    ska1=skills.objects.all()
     pro1=projects.objects.all()
     jur1=Journey.objects.all()
-    return render(request, 'home.html', {'project':pro1, 'journey':jur1})
+    expirience1=Journey1.objects.all()
+    return render(request, 'home.html', {'project':pro1, 'journey':jur1, 'skill_nam':ska1,  'journey1':expirience1})
 def aboutme(request):
     return render(request, 'aboutme.html')
 def contact(request):
@@ -14,7 +16,7 @@ def contact(request):
 def projects1(request):
     project=projects.objects.all()
     return render(request, 'projects.html',{"project":project})
-def skills(request):
+def skills1(request):
     return render(request, 'skills.html')
 def journey(request):
     jur2=Journey.objects.all()
