@@ -1,202 +1,65 @@
-{% extends "base.html" %}
-{% block content %}
 {%load static%}
-<div class="preloader">
-    <svg  viewBox="0 0 144.531 75.148" xmlns="http://www.w3.org/2000/svg" id="svg" >
-        <path 
-        d="M 67.579 50.782 L 67.627 71.241 Q 65.87 72.999 63.672 72.999 A 5.096 5.096 0 0 1 62.714 72.906 A 5.695 5.695 0 0 1 62.574 72.877 Q 62.012 72.755 61.377 72.486 A 158.083 158.083 0 0 1 61.075 72.358 Q 60.645 72.175 60.352 72.047 A 6.753 6.753 0 0 1 60.134 71.946 Q 59.774 71.773 59.211 71.465 A 38.703 38.703 0 0 1 59.205 71.461 A 144.36 144.36 0 0 0 58.941 71.316 Q 58.453 71.05 58.28 70.962 A 3.821 3.821 0 0 0 58.252 70.948 A 48.146 48.146 0 0 1 53.578 72.579 Q 51.148 73.296 48.392 73.875 A 79.16 79.16 0 0 1 48.023 73.951 A 60.437 60.437 0 0 1 41.683 74.919 A 48.242 48.242 0 0 1 37.061 75.147 Q 29.737 75.147 23.584 73.048 A 36.669 36.669 0 0 1 17.571 70.404 A 29.115 29.115 0 0 1 13.135 67.384 A 35.017 35.017 0 0 1 5.835 59.059 A 36.303 36.303 0 0 1 1.416 48.976 A 42.547 42.547 0 0 1 0 37.989 Q 0 30.323 2.491 23.39 A 40.117 40.117 0 0 1 7.054 14.331 A 36.026 36.026 0 0 1 9.375 11.28 A 31.717 31.717 0 0 1 19.86 3.246 A 36.339 36.339 0 0 1 20.264 3.053 Q 26.758 0.001 34.278 0.001 A 36.31 36.31 0 0 1 43.653 1.272 A 42.923 42.923 0 0 1 46.46 2.125 A 26.268 26.268 0 0 1 51.566 4.466 A 19.731 19.731 0 0 1 56.299 8.399 A 44.1 44.1 0 0 1 56.346 6.289 Q 56.597 1.075 58.204 1.075 L 63.672 1.075 Q 65.656 1.075 65.961 4.712 A 17.327 17.327 0 0 1 66.016 6.153 L 66.016 18.214 A 46.823 46.823 0 0 1 65.999 19.512 Q 65.963 20.814 65.849 21.681 A 8.485 8.485 0 0 1 65.748 22.291 A 8.042 8.042 0 0 1 65.623 22.81 Q 65.388 23.654 65.064 23.902 A 1.428 1.428 0 0 1 64.75 24.079 Q 64.344 24.25 63.672 24.317 L 59.62 24.317 Q 59.301 24.317 58.577 23.571 A 12.213 12.213 0 0 1 58.228 23.194 Q 57.227 22.071 55.909 20.387 A 24.864 24.864 0 0 0 54.653 18.913 Q 53.964 18.162 53.136 17.36 A 47.082 47.082 0 0 0 52.466 16.725 Q 50.342 14.747 47.95 13.063 A 19.123 19.123 0 0 0 45.125 11.431 A 25.931 25.931 0 0 0 42.164 10.255 A 22.311 22.311 0 0 0 35.108 9.132 A 22.093 22.093 0 0 0 29.06 9.941 A 19.922 19.922 0 0 0 26.709 10.768 Q 22.852 12.403 20.166 15.162 A 26.807 26.807 0 0 0 16.173 20.478 A 30.649 30.649 0 0 0 15.552 21.607 A 31.199 31.199 0 0 0 12.72 29.396 A 38.932 38.932 0 0 0 11.817 37.794 A 30.445 30.445 0 0 0 12.867 45.777 A 26.663 26.663 0 0 0 16.114 53.126 Q 18.311 56.593 21.412 59.205 A 22.158 22.158 0 0 0 26.213 62.26 A 27.506 27.506 0 0 0 28.882 63.355 A 27.39 27.39 0 0 0 36.018 64.809 A 32.507 32.507 0 0 0 38.379 64.894 A 75.61 75.61 0 0 0 56.788 62.647 L 56.788 52.589 A 18.89 18.89 0 0 0 56.753 51.416 Q 56.717 50.842 56.644 50.347 A 9.105 9.105 0 0 0 56.543 49.781 A 6.899 6.899 0 0 0 56.057 48.337 A 8.789 8.789 0 0 0 55.591 47.462 Q 54.883 46.29 53.296 45.704 Q 52.063 45.249 50.342 45.147 A 17.442 17.442 0 0 0 49.317 45.118 A 1.581 1.581 0 0 1 48.82 45.045 Q 48.352 44.891 48.124 44.411 A 1.698 1.698 0 0 1 48.072 44.288 A 3.221 3.221 0 0 1 47.933 43.791 Q 47.763 42.961 47.755 41.455 A 28.187 28.187 0 0 1 47.754 41.31 A 11.355 11.355 0 0 1 48.4 37.443 A 10.433 10.433 0 0 1 49.366 35.45 Q 55.665 35.987 61.768 35.987 Q 64.258 35.987 66.7 35.865 A 152.457 152.457 0 0 0 67.865 35.803 Q 69.297 35.72 70.364 35.627 A 50.503 50.503 0 0 0 70.704 35.597 Q 72.166 35.46 72.559 35.451 A 2.204 2.204 0 0 1 72.608 35.45 Q 72.999 35.841 73.365 37.281 Q 73.678 38.514 73.723 39.513 A 7.325 7.325 0 0 1 73.731 39.845 A 9.253 9.253 0 0 1 73.663 41.008 Q 73.589 41.589 73.435 42.069 A 3.969 3.969 0 0 1 73.096 42.848 Q 72.473 43.926 71.592 44.416 A 3.172 3.172 0 0 1 71.558 44.435 A 50.814 50.814 0 0 0 69.751 45.46 Q 68.998 45.908 68.432 46.882 A 6.565 6.565 0 0 0 68.213 47.291 A 5.364 5.364 0 0 0 67.827 48.389 Q 67.579 49.409 67.579 50.782 Z M 88.233 74.366 L 83.497 74.366 A 208.903 208.903 0 0 1 82.108 67.881 Q 80.779 61.113 80.439 56.46 A 40.655 40.655 0 0 1 80.323 53.517 A 1.224 1.224 0 0 1 80.678 52.676 Q 81.066 52.253 81.876 51.904 A 8.179 8.179 0 0 1 82.52 51.661 A 14.418 14.418 0 0 1 87.11 50.929 A 10.729 10.729 0 0 1 87.682 50.943 Q 88.251 50.973 88.646 51.069 A 3.145 3.145 0 0 1 88.672 51.075 A 22.954 22.954 0 0 0 93.018 58.106 A 23.842 23.842 0 0 0 96.794 61.507 A 20.513 20.513 0 0 0 99.097 62.94 A 33.094 33.094 0 0 0 103.99 65.079 A 29.122 29.122 0 0 0 105.689 65.602 Q 108.985 66.505 112.061 66.505 A 20.511 20.511 0 0 0 115.962 66.155 Q 118.997 65.567 121.216 63.99 A 8.169 8.169 0 0 0 124.678 57.99 A 12.13 12.13 0 0 0 124.756 56.593 A 11.402 11.402 0 0 0 124.322 53.389 A 9.639 9.639 0 0 0 123.169 50.855 A 12.242 12.242 0 0 0 118.921 46.852 A 30.651 30.651 0 0 0 115.68 45.237 A 39.502 39.502 0 0 0 112.818 44.142 A 110.382 110.382 0 0 0 107.435 42.466 A 125.75 125.75 0 0 0 105.542 41.944 Q 101.709 40.919 97.876 39.796 Q 94.043 38.673 90.601 36.964 A 31.043 31.043 0 0 1 86.237 34.349 A 27.091 27.091 0 0 1 84.498 32.984 A 15.298 15.298 0 0 1 81.168 28.925 A 18.932 18.932 0 0 1 80.249 27.101 A 18.499 18.499 0 0 1 78.905 22.298 A 24.332 24.332 0 0 1 78.663 18.8 A 15.513 15.513 0 0 1 82.374 8.424 A 21.601 21.601 0 0 1 91.724 2.027 A 34.744 34.744 0 0 1 100.947 0.112 A 41.351 41.351 0 0 1 104.004 0.001 A 34.435 34.435 0 0 1 112.604 1.027 A 26.684 26.684 0 0 1 121.583 5.177 A 12.104 12.104 0 0 0 122.107 3.975 A 10.077 10.077 0 0 0 122.339 3.272 A 15.658 15.658 0 0 0 122.444 2.895 Q 122.608 2.27 122.608 2.003 A 0.596 0.596 0 0 1 122.715 1.668 Q 122.819 1.512 123.023 1.368 A 1.655 1.655 0 0 1 123.572 1.12 Q 123.788 1.065 124.039 1.052 A 2.874 2.874 0 0 1 124.073 1.051 Q 124.708 1.026 126.368 1.026 A 26.352 26.352 0 0 1 127.207 1.042 Q 128.555 1.085 130.772 1.253 A 174.817 174.817 0 0 1 131.006 1.271 Q 134.031 14.667 134.082 20.462 A 22.331 22.331 0 0 1 134.083 20.655 Q 134.083 21.328 132.183 21.783 A 14.469 14.469 0 0 1 131.519 21.925 A 27.049 27.049 0 0 1 127.126 22.405 A 24.651 24.651 0 0 1 126.514 22.413 L 125.293 22.413 Q 123.487 16.017 118.116 11.891 A 19.518 19.518 0 0 0 109.868 8.252 A 27.275 27.275 0 0 0 104.59 7.765 A 27.717 27.717 0 0 0 100.804 8.006 Q 98.877 8.272 97.319 8.833 A 10.878 10.878 0 0 0 94.239 10.499 A 8.817 8.817 0 0 0 90.813 16.958 A 12.099 12.099 0 0 0 90.772 17.97 Q 90.772 20.753 92.359 22.901 A 11.496 11.496 0 0 0 95.208 25.599 A 14.297 14.297 0 0 0 96.631 26.441 A 35.565 35.565 0 0 0 99.705 27.844 A 47.057 47.057 0 0 0 102.784 28.956 A 177.402 177.402 0 0 0 108.204 30.613 A 204.096 204.096 0 0 0 110.108 31.153 A 230.727 230.727 0 0 1 117.823 33.448 Q 121.68 34.669 125.147 36.476 Q 128.614 38.282 131.299 40.626 A 15.974 15.974 0 0 1 134.796 45.026 A 19.438 19.438 0 0 1 135.572 46.607 A 18.895 18.895 0 0 1 136.971 51.792 A 23.964 23.964 0 0 1 137.159 54.835 A 22.723 22.723 0 0 1 136.646 59.761 A 18.152 18.152 0 0 1 135.108 64.088 A 16.856 16.856 0 0 1 131.439 68.964 A 15.841 15.841 0 0 1 129.517 70.46 A 26.578 26.578 0 0 1 122.217 73.805 A 30.052 30.052 0 0 1 121.607 73.976 A 34.666 34.666 0 0 1 114.833 75.065 A 41.021 41.021 0 0 1 112.208 75.147 Q 106.836 75.147 101.539 73.341 A 34.348 34.348 0 0 1 91.944 68.312 L 91.114 73.146 A 2.751 2.751 0 0 1 91.046 73.399 Q 90.963 73.654 90.845 73.805 Q 90.715 73.972 90.314 74.112 A 4.032 4.032 0 0 1 90.04 74.195 Q 89.405 74.366 88.233 74.366 Z" />
-    </svg>
-    <div class="name-container">
-        <div class="logo-name">Shankar</div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shankar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{%static 'assets123/css/style123.css' %}">
+</head>
+<body>
+  
+  
 
-<section class="home" id="home">
-    <div class="home-content">
-        <h1>Hi, I am <span> Shankar Palagani</span></h1>
-        <div class="text-animate">
-            <h3>Developer</h3>
-        </div>
-        <p> Love to develop in a Creative way</p>
-        <div class="button-box">
-            <a href="" class="btn">Hire Me</a>
-            <a href="contact.html" class="btn">Lets Talk</a>
-        </div>
-    </div>
-    <div class="home-sci">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.instagram.com/__myself__codex__/"><i class='bx bxl-instagram-alt' ></i></a>
-        <a href="https://www.linkedin.com/in/shankar-palagani-1b0a18215/"><i class='bx bxl-linkedin-square' ></i></a>
-        <a href="https://github.com/Shankar-9"><i class='bx bxl-github' ></i></a>
-    </div>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <!-- <img src="assets123/img/koala.svg" alt="Logo"> -->
+               <a href="/"> <span>Shankar</span></a>
+            </div>
+            <ul>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="journey.html">Journey</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% static 'assets123\img\Palagani Gowri Shankar_NIT Raipur.pdf'%}"> Resume</a></li>
+            </ul>
 
-    <div class="image-hover">
-     </div>
-</section>
-<!-- ===========================about me ===================================== -->
-<section class="about" id="about">
-    <h2 class="heading">About <span>Me</span> </h2>
-    <div class="about-img">
-        <img src="{%static 'assets123\css\about.png'%}" alt="">
-        <span class="circle-spin"></span>
-    </div>
-    <div class="about-content"> 
-        <h3>Shankar</h3>
-        <p> I am Palagai Gowri Shankar, currently in my 5th semester of a B.Tech program in Electronics and Communication Engineering at the National Institute of Technology Raipur. My current cumulative performance index (CPI) stands at an impressive 8.98. I possess strong coding skills in C++, Python, and C, and I am proficient in web development technologies such as HTML, CSS, and the Django framework. Additionally, I am known for my quick learning abilities and excel in interpersonal communication.</p>
-        <div class="button-box btns">
-            <a href="aboutme.html" class="btn">Read More</a>
-        </div>
-    </div>
-</section>
-
-<!-- ========================education======================= -->
-<section class="education" id="education">
-    <h2 class="heading">My <span>Journey</span></h2>
-    <div class="education-row">
-        <div class="education-column">
-            <h3 class="title">Education</h3>
-            <div class="education-box">
-                {% for journey in journey%}
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
-                        <h3>{{journey.Univerity}}</h3>
-                        <p>{{journey.description}}</p>
-                        <br>
-                        <p>{{journey.extra}}</p>
-                    </div>
+            <div class="mobile-menu-icon">
+                <div class="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
-                {%endfor%}
             </div>
+        </nav>
+
+
+
+        <div class="intro_div">
+         
         </div>
+    </header>
+  
+    {%block content%}
 
-        <div class="education-column">
-            <h3 class="title">Experiance</h3>
+    {%endblock%}
 
-            <div class="education-box">
-                {% for journey in journey1%}
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i>{{journey.from_date}} - {{journey.to_date}}</div>
-                        <h3>{{journey.Univerity}}</h3>
-                        <p>{{journey.description}}</p>
-                        <br>
-                        <p>{{journey.extra}}</p>
-                    </div>
-                </div>
-                {%endfor%}
-             
 
-            </div>
-        </div>
+<footer>
+    <div class="footer">
+        <p><i class='bx bx-copyright'></i> All rights are reserved | Designed by Shankar | 9542973947</p>
     </div>
-
-    <div class="button-box btns">
-        <a href="" class="btn">Read More</a>
-    </div>
-</section><!-- ====================Skills section design ==================== -->
-<section class="skills" id="skills">
-<h1 class="heading">My <span>Skills</span></h1>
-<div class="programming">
-    <h1>Programming</h1>
-    <div class="out_programming">
-      {% for skill in skill_nam %}
-       {% if skill.type == "P" %}
-        <div class="programming_content">
-            <div class="programming_img">
-                <img src='{{skill.image.url}}' alt="">
-            </div>
-            <div class="programmig_con">
-                {{skill.skill}}     
-                <br/>
-                {{skill.type}}  
-            </div>
-         </div>
-      {%endif%}
-     {%endfor%}
-    </div>
-</div>
-<div class="programming">
-    <h1>Technologirs</h1>
-    <div class="out_programming">
-     {% for skill in skill_nam %}
-     {% if skill.type == "T" %}
-        <div class="programming_content">
-            <div class="programming_img">
-                <img src='{{skill.image.url}}' alt="">
-            </div>
-            <div class="programmig_con">
-                {{skill.skill}}       
-            </div>
-         </div>
-     {%endif%}
-     {%endfor%}
-    </div>
-</div>
-<center> <div class="button-box btns">
-<a href="skills.html" class="btn">Read More</a>
-</div></center>
-
-</section>
-
-
-<!-- ============================ projects ================= -->
-<section class="project">
-<h1 class="heading">My <span>Projects</span></h1>
-<div class="project-list">
-    {% for project in project%}
-    <div class="project-content">
-        <div class="project-content1">
-            <h2>{{project.title}}</h2>
-            <p>{{project.description}}</p>
-        </div>
-        <div class="button">
-            <a href="projects.html">More</a>
-        </div>
-    </div>
-    {%endfor%}
-</div>
-</section>
-
-
-
-<!-- ========================contact me =============================== -->
-<section class="contact" id="contact">
-<h2 class="heading">Contact <span>Me!</span></h2>
-<form action="submit_form" method="post">
-    {% csrf_token %}
-    <div class="input-box">
-        <div class="input-field">
-            <input type="text" placeholder="Full Name" name="name" required>
-            <span class="focus"></span>
-        </div>
-        <div class="input-field">
-            <input type="email" placeholder="Email" name="email" required>
-            <span class="focus"></span>
-        </div>
-    </div>
-    <div class="input-box">
-        <div class="input-field">
-            <input type="number" placeholder="Mobile Number" name="mobile" requried>
-            <span class="focus"></span>
-        </div>
-        <div class="input-field">
-            <input type="text" placeholder="Subject" name="subject">
-            <span class="focus"></span>
-        </div>
-    </div>
-
-
-    <div class="textarea-field">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-        <span class="focus"></span>
-    </div>
-
-    <div class="button-box btns">
-        <button type="submit" class="btn">Submit</button>
-    </div>
-
-</form>
-</section>
-
-{% endblock %}
+</footer>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- This line have to change url  -->
+<!-- <script src="{% static 'loading_page\script.js'%}"></script> -->
+<!-- ========navbar script link =============== -->
+<script src="{%static 'assets123\js\menu.js' %}"></script>
+</html>
