@@ -5,3 +5,4 @@ from .models import *
 admin.site.register(Journey)
 admin.site.register(projects)
 admin.site.register(skills)
+admin.site.register(Journey1)
